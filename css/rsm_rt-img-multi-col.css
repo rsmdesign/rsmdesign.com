@@ -1,3 +1,13 @@
+.hero-video-full-bleed {
+	margin-left: calc(-1 * (177.778vh - 100vw) / 2)
+}
+@media screen and (max-height: 56.25vw) {
+	.hero-video-full-bleed {
+  	height: 56.25vw;
+    margin-top: calc(-1 * (56.25vw - 100vh) / 2);
+    margin-left: 0;
+  }
+}
 .rt-body h2 + h3 {
     margin-top: 0;
 }
