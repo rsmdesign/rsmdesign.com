@@ -1,0 +1,10 @@
+.slider-component,
+.slider-component * {
+    pointer-events: none;
+}
+.slider-component a,
+.slider-component .w-slider-arrow-left,
+.slider-component .w-slider-arrow-right,
+.slider-component .w-slider-nav * {
+    pointer-events: auto;
+}

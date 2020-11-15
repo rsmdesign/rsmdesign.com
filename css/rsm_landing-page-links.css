@@ -1,0 +1,12 @@
+.description-list p > a,
+.description-list a {
+    color: #1a1818;
+    transition: color 0.2s ease;
+}
+.description-list p > a:hover,
+.description-list a:hover {
+    color: #ed4d29;
+}
+.grid-description p + p {
+    margin-top: 1em;
+}
