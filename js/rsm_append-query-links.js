@@ -1,6 +1,6 @@
 const data = {
    markets: [
-      "Mixed Use Design",
+      "Mixed-Use Design",
       "Hospitality Signage Design",
       "Workplace Design",
       "Cultural Design",
