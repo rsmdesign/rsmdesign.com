@@ -39,7 +39,22 @@ const data = {
       "Architectural Graphic Design",
    ],
    offices: ["San Clemente Studio", "Dallas Studio", "Los Angeles Studio", "Boulder Studio"],
-   regions: [],
+   regions: [
+      "China, East Asia",
+      "San Diego, CA",
+      "Nashville, Tennessee",
+      "Florida",
+      "United Arab Emirates (UAE)",
+      "Salt Lake City, Utah",
+      "Charlotte, NC",
+      "South America",
+      "Central America",
+      "Saudi Arabia",
+      "Seattle, WA",
+      "Oregon",
+      "Phoenix, AZ",
+      "Europe",
+   ],
    caseStudy: [],
 }
 
