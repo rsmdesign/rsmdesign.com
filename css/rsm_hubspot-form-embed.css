@@ -68,7 +68,6 @@
 }
 
 .hs-form-embed input[type=submit] {
-	margin-top: 1em;
 	width: auto;
 	background-color: #575757;
 	transition: background-color 0.2s;
