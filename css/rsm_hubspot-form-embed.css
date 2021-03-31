@@ -31,7 +31,8 @@
 
 @media screen and (max-width: 478px) {
 	.hs-form-embed input,
-	.hs-form-embed select {
+	.hs-form-embed select,
+	.hs-form-embed-80 input {
 		width: 100%;
 	}
 }
