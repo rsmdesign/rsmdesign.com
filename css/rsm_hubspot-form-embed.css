@@ -7,10 +7,6 @@
 	width: 80%;
 }
 
-.hs-form-embed-80 input {
-	width: 100%;
-}
-
 .hs-form-embed label {
 	font-weight: 400;
 }
@@ -27,6 +23,10 @@
 	border: none;
 	border-bottom: 1px solid #a2a4a7;
 	border-radius: 0;
+}
+
+.hs-form-embed-80 input {
+	width: 100%;
 }
 
 @media screen and (max-width: 478px) {
