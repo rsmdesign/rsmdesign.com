@@ -3,6 +3,14 @@
 	width: 100%;
 }
 
+.hs-form-embed-80 form {
+	width: 80%;
+}
+
+.hs-form-embed-80 input {
+	width: 100%;
+}
+
 .hs-form-embed label {
 	font-weight: 400;
 }
@@ -65,6 +73,10 @@
 	margin: 0.25 0 1em 0;
 	border: 1px solid #a2a4a7;
 	padding: 8px 12px;
+}
+
+.hs_recaptcha {
+	margin-bottom: 2em;
 }
 
 .hs-form-embed input[type=submit] {
