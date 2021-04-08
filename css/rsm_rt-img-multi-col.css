@@ -17,6 +17,7 @@
         height: 56.25vw;
         margin-top: calc(-1 * (100 * (1080vw/1920) - 100vh) / 2);
         margin-left: 0;
+        width: 100vw;
     }
 }
 
