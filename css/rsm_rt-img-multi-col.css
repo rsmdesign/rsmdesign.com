@@ -1,20 +1,9 @@
 .hero-video-full-bleed {
 	margin-left: calc(-1 * (100 * (1920vh/1080) - 100vw) / 2);
 }
-
-@media screen and (max-height: 56.25vw) {
-	.hero-video-full-bleed {
-        height: 56.25vw;
-        margin-top: calc(-1 * (100 * (1080vw/1920) - 100vh) / 2);
-        margin-left: 0;
-    }
-}
 @media screen and (max-width: 767px) {
     .hero-full-bleed-mobile > .hero-video-full-bleed {
-        /* This is the full formula unsimplified
-        margin-left: calc(-1 * (((1920/1080) * 133vw) - 100vw) / 2)
-        */
-        margin-left: -68.222vw;
+        margin-left: calc(-1 * (133vw * (1920/1080) - 100vw) / 2)
     }
 }
 @media screen and (max-width: 767px) and (max-height: 133vw) {
@@ -22,7 +11,8 @@
         margin-left: calc(-1 * (100 * (1920vh/1080) - 100vw) / 2);
     }
 }
-@media screen and (max-width: 767px) and (max-height: 56.25vw) {
+@media screen and (max-height: 56.25vw) {
+	.hero-video-full-bleed,
     .hero-full-bleed-mobile > .hero-video-full-bleed {
         height: 56.25vw;
         margin-top: calc(-1 * (100 * (1080vw/1920) - 100vh) / 2);
