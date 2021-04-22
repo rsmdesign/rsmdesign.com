@@ -22,19 +22,37 @@
     }
 }
 
+.rt-body h6 > a::after {
+	content: "›";
+	position: relative;
+	top: .1em;
+	color: #ed4d29;
+	font-size: 2em;
+	line-height: 0;
+	font-weight: 300;
+	margin-left: 0.25em;
+	transition: color 0.2s;
+}
+.rt-body h6 > a:hover {
+	color: #a2a4a7;
+}
+
 .rt-body h2 + h3 {
     margin-top: 0;
 }
 .rt-body h2 + p:first-of-type,
 .rt-body h2 + p,
 .rt-body h2 + figure,
-.rt-body h3 + figure {
+.rt-body h3 + figure,
+.rt-body h6 + figure {
     margin-top: 3em;
 }
 .rt-body h2 + p:first-of-type,
 .rt-body h2 + p,
 .rt-body h3 + p:first-of-type,
-.rt-body h3 + p {
+.rt-body h3 + p,
+.rt-body h6 + p:first-of-type,
+.rt-body h6 + p {
     margin-top: 1em;
 }
 .rt-body figure + h2 {
