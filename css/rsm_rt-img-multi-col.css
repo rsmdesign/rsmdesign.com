@@ -68,15 +68,6 @@
 .rt-body p + blockquote {
     margin-top: 10em;
 }
-.article-body figure + h3,
-.article-body h3:first-child,
-.article-body p:first-of-type,
-.article-body figure + p,
-.article-body blockquote + p,
-.article-body p + figure,
-.article-body p + blockquote {
-    margin-top: 6em;
-}
 .rt-body blockquote::before {
     content: "“";
     display: block;
@@ -260,5 +251,101 @@ figure {
     }
     .rt-body figure img + img {
         margin-top: 1em;
+    }
+}
+
+.article-body h2 + h2:nth-of-type(2n) {
+    margin-top: -0.5em;
+    font-size: 1.222em;
+    color: #a2a4a7;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
+}
+.article-body h2 + p:first-of-type,
+.article-body h2 + p,
+.article-body h2 + figure,
+.article-body h3 + figure,
+.article-body h6 + figure,
+.article-body h2 + p:first-of-type,
+.article-body h2 + p,
+.article-body h3 + p:first-of-type,
+.article-body h3 + p,
+.article-body h6 + p:first-of-type,
+.article-body h6 + p,
+.article-body blockquote + p,
+.article-body p + blockquote,
+.article-body p + figure
+.article-body p:first-of-type {
+    margin-top: 0;
+}
+.article-body figure + h2,
+.article-body figure + h3,
+.article-body figure + h4,
+.article-body figure + h5,
+.article-body figure + p {
+    margin-top: 4em;
+}
+.article-body p + figure {
+    margin-bottom: 1em;
+}
+.article-body blockquote::before {
+    content: "";
+    margin: 0;
+}
+.article-body blockquote::after {
+    content: "";
+    margin: 0;
+}
+.article-body blockquote + blockquote:nth-of-type(2n) {
+    font-size: 1.67em;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 2em;
+    margin-top: -2em;
+}
+.article-body figcaption {
+    text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+    .article-body blockquote + blockquote:nth-of-type(2n) {
+        font-size: 1.67em;
+        margin-top: -2em;
+    }
+}
+@media screen and (max-width: 767px) {
+    .article-body p:first-of-type,
+    .article-body blockquote + p,
+    .article-body p + figure,
+    .article-body p + blockquote {
+        margin-top: 0;
+    }
+    .article-body figure + p {
+        margin-top: 4em;
+    }
+    .article-body blockquote + blockquote:nth-of-type(2n) {
+        font-size: 1em;
+        margin-bottom: 3em;
+    }
+    .article-body blockquote::before {
+        content: "";
+        margin: 0;
+    }
+    .article-body blockquote + blockquote:nth-of-type(2n) {
+        content: "";
+        margin-bottom: 2em;
+    }
+    .article-body figure.w-richtext-align-center,
+    .article-body figcaption {
+        width: 100%;
+        min-width: auto;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 478px) {
+    .article-body blockquote + blockquote:nth-of-type(2n) {
+        font-size: 1.5em;
     }
 }
