@@ -275,7 +275,7 @@ figure {
 .article-body h6 + p,
 .article-body blockquote + p,
 .article-body p + blockquote,
-.article-body p + figure
+.article-body p + figure,
 .article-body p:first-of-type {
     margin-top: 0;
 }
@@ -306,6 +306,8 @@ figure {
     margin-top: -2em;
 }
 .article-body figcaption {
+    width: 100%;
+    max-width: none;
     text-align: right;
 }
 
