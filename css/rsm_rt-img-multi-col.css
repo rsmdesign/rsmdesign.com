@@ -280,7 +280,7 @@ figure {
     margin-top: 0;
 }
 .article-body p:first-child {
-    margin-top: 4em;
+    margin-top: 2em;
 }
 .article-body figure + h2,
 .article-body figure + h3,
