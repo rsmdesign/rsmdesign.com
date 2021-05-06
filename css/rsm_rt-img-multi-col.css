@@ -306,7 +306,7 @@ figure {
     text-transform: none;
     letter-spacing: 0;
     margin-bottom: 2em;
-    margin-top: -2em;
+    margin-top: -1.5em;
 }
 .article-body figcaption {
     width: 100%;
@@ -317,7 +317,7 @@ figure {
 @media screen and (max-width: 991px) {
     .article-body blockquote + blockquote {
         font-size: 1.67em;
-        margin-top: -2em;
+        margin-top: -1.5em;
     }
 }
 @media screen and (max-width: 767px) {
