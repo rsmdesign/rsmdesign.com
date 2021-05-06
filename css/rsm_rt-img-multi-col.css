@@ -291,7 +291,8 @@ figure {
 .article-body p + figure {
     margin-bottom: 1em;
 }
-.article-body blockquote {
+.article-body blockquote,
+.article-body p + blockquote {
     margin-top: 2em;
 }
 .article-body blockquote::before {
