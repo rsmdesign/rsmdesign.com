@@ -274,7 +274,6 @@ figure {
 .article-body h6 + p:first-of-type,
 .article-body h6 + p,
 .article-body blockquote + p,
-.article-body p + blockquote,
 .article-body p + figure,
 .article-body p:first-of-type {
     margin-top: 0;
@@ -291,6 +290,9 @@ figure {
 }
 .article-body p + figure {
     margin-bottom: 1em;
+}
+.article-body blockquote {
+    margin-top: 2em;
 }
 .article-body blockquote::before {
     content: "";
@@ -323,8 +325,7 @@ figure {
 @media screen and (max-width: 767px) {
     .article-body p:first-of-type,
     .article-body blockquote + p,
-    .article-body p + figure,
-    .article-body p + blockquote {
+    .article-body p + figure {
         margin-top: 0;
     }
     .article-body figure + p {
