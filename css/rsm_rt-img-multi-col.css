@@ -258,7 +258,7 @@ figure {
     margin-top: -0.5em;
     font-size: 1.222em;
     color: #a2a4a7;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 1em;
 }
