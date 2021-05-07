@@ -55,14 +55,15 @@ const data = {
       "Phoenix, AZ",
       "Europe",
    ],
-   caseStudy: [],
+   rsm: ["Women Owned Business"],
 }
 
 const queryValues = {
    "markets": "m",
    "services": "s",
    "offices": "o",
-   "regions": "r"
+   "regions": "r",
+   "rsm": "e"
 }
 
 // determine category to filter by using the URL, i.e. rsmdesign.com/<category>

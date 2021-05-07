@@ -55,7 +55,7 @@ const data = {
       "Phoenix AZ",
       "Europe",
    ],
-   caseStudy: [],
+   rsm: ["Women Owned Business"],
 }
 
 const queryKeys = {
@@ -63,7 +63,7 @@ const queryKeys = {
    s: data.services,
    o: data.offices,
    r: data.regions,
-   cs: data.caseStudy,
+   e: data.rsm,
 }
 
 const clickFilter = filter =>
