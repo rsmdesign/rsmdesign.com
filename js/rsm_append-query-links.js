@@ -107,7 +107,7 @@ if (filterCategory === "work" || filterCategory === "news") {
          })
    }
    const filterList = document.querySelector(".work-filter-grid")
-   const key = queryValues[dropdown.querySelector(".work-filter-item").textContent.toLowerCase()]
+   const key = queryValues[filterList.querySelector(".work-filter-item").textContent.toLowerCase()]
    filterList.querySelectorAll(".filter-by-text").forEach((item, i) => {
       item.addEventListener("click", updateLinks(key, i))
    })
