@@ -80,7 +80,7 @@ const filterCategory = window.location.pathname.split("/")[1]
 const appendQueryParam = (href, key, value) =>
    href + (href.includes("?") ? "&" : "?") + key + "=" + value
 
-if (filterCategory === "work") {
+if (filterCategory === "work" || filterCategory === "news") {
    const linkState = {}
    const updateLinks = (key, value) => () => {
       if (!linkState[key]) {
