@@ -71,7 +71,7 @@ const queryValues = {
    "offices": "o",
    "regions": "r",
    "rsm": "e",
-   "news": "t"
+   "topics": "t"
 }
 
 // determine category to filter by using the URL, i.e. rsmdesign.com/<category>
@@ -106,14 +106,12 @@ if (filterCategory === "work" || filterCategory === "news") {
             link.setAttribute("href", href)
          })
    }
-   document
-      .querySelectorAll(".dropdown-wrapper:not(.dropdown-wrapper-search)")
-      .forEach(dropdown => {
-         const key = queryValues[dropdown.querySelector(".arrow-button-text").textContent.toLowerCase()]
-         dropdown.querySelectorAll("[role=listitem]").forEach((item, i) => {
-            item.addEventListener("click", updateLinks(key, i))
-         })
-      })
+   const filterList = document.querySelector(".work-filter-grid")
+   const key = queryValues[dropdown.querySelector(".work-filter-item").textContent.toLowerCase()]
+   filterList.querySelectorAll(".filter-by-text").forEach((item, i) => {
+      item.addEventListener("click", updateLinks(key, i))
+   })
+
 } else if (data[filterCategory]) {
    // get an index number for the selected category
    const pageTitle = document.querySelector("h1").textContent
