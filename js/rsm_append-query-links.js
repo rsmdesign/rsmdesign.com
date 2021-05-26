@@ -56,7 +56,7 @@ const data = {
       "Europe",
    ],
    rsm: ["Women Owned Business"],
-   topics: [
+   news: [
       "Awards",
       "Press",
       "Education",
@@ -71,7 +71,7 @@ const queryValues = {
    "offices": "o",
    "regions": "r",
    "rsm": "e",
-   "topics": "t"
+   "news": "t"
 }
 
 // determine category to filter by using the URL, i.e. rsmdesign.com/<category>
