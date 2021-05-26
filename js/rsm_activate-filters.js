@@ -56,6 +56,13 @@ const data = {
       "Europe",
    ],
    rsm: ["Women Owned Business"],
+   topics: [
+      "Awards",
+      "Press",
+      "Education",
+      "RSM Culture",
+      "Project Updates"
+   ],
 }
 
 const queryKeys = {
@@ -64,6 +71,7 @@ const queryKeys = {
    o: data.offices,
    r: data.regions,
    e: data.rsm,
+   t: data.topics,
 }
 
 const clickFilter = filter =>
