@@ -143,7 +143,7 @@ if (filterCategory === "work") {
    document
       .querySelectorAll(".work-filter-grid > div")
       .forEach(dropdown => {
-         const key = "topics"
+         const key = "t"
          dropdown.querySelectorAll("[role=listitem] > a").forEach((item, i) => {
             item.addEventListener("click", updateLinks(key, i))
          })
