@@ -80,7 +80,7 @@ const filterCategory = window.location.pathname.split("/")[1]
 const appendQueryParam = (href, key, value) =>
    href + (href.includes("?") ? "&" : "?") + key + "=" + value
 
-if (filterCategory === "work" || filterCategory === "news") {
+if (filterCategory === "work") {
    const linkState = {}
    const updateLinks = (key, value) => () => {
       if (!linkState[key]) {
@@ -110,7 +110,41 @@ if (filterCategory === "work" || filterCategory === "news") {
       .querySelectorAll(".work-filter-grid > div")
       .forEach(dropdown => {
          const key = queryValues[dropdown.querySelector("h2").textContent.toLowerCase()]
-         dropdown.querySelectorAll("[role=listitem]").forEach((item, i) => {
+         dropdown.querySelectorAll("[role=listitem] > a").forEach((item, i) => {
+            item.addEventListener("click", updateLinks(key, i))
+         })
+      })
+} else if (filterCategory === "news") {
+   const linkState = {}
+   const updateLinks = (key, value) => () => {
+      if (!linkState[key]) {
+         linkState[key] = new Set()
+      }
+      if (linkState[key].has(value)) {
+         linkState[key].delete(value)
+      } else {
+         linkState[key].add(value)
+      }
+
+      document
+         .querySelectorAll("div:not(.w-condition-invisible) > div.news-post-preview a")
+         .forEach(link => {
+            let href = link.getAttribute("href").split("?")[0]
+
+            for (const key of Object.keys(linkState)) {
+               if (linkState[key].size > 0) {  
+                  href = appendQueryParam(href, key, [...linkState[key]].join())
+               }
+            }
+
+            link.setAttribute("href", href)
+         })
+   }
+   document
+      .querySelectorAll(".work-filter-grid > div")
+      .forEach(dropdown => {
+         const key = "topics"
+         dropdown.querySelectorAll("[role=listitem] > a").forEach((item, i) => {
             item.addEventListener("click", updateLinks(key, i))
          })
       })
