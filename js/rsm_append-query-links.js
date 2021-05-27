@@ -106,12 +106,14 @@ if (filterCategory === "work" || filterCategory === "news") {
             link.setAttribute("href", href)
          })
    }
-   const filterList = document.querySelector(".work-filter-grid")
-   const key = queryValues[filterList.querySelector(".work-filter-item").textContent.toLowerCase()]
-   filterList.querySelectorAll(".filter-by-text").forEach((item, i) => {
-      item.addEventListener("click", updateLinks(key, i))
-   })
-
+   document
+      .querySelectorAll(".work-filter-grid > div")
+      .forEach(dropdown => {
+         const key = queryValues[dropdown.querySelector("h2").textContent.toLowerCase()]
+         dropdown.querySelectorAll("[role=listitem]").forEach((item, i) => {
+            item.addEventListener("click", updateLinks(key, i))
+         })
+      })
 } else if (data[filterCategory]) {
    // get an index number for the selected category
    const pageTitle = document.querySelector("h1").textContent
