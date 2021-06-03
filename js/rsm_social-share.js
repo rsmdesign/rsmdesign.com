@@ -16,7 +16,7 @@ const emailButton = document.getElementById('email-button');
 emailButton.setAttribute('target', '_blank');
 emailButton.setAttribute(
     'href',
-    `mailto:rsmdesign@rsmdesign.com?subject=${document.title}&body=${window.location.href}`
+    `mailto:%20?subject=${document.title}&body=${window.location.href}`
 );
 
 document.querySelector('#pinterest-button').addEventListener('click', (e) =>{
