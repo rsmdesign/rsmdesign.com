@@ -33,16 +33,32 @@ p > a:hover {
     color: #ed4d29;
 }
 
+.link-hubspot-cta {
+    color: #1a1818;
+	transition: color .2s;
+}
+.body-dark .link-hubspot-cta {
+    color: white;
+}
+.link-hubspot-cta:hover {
+    color: #ed4d29
+}
+.studio-locations-item .link-hubspot-cta:hover {
+    fill: #a2a4a7;
+}
+
 .svg-link {
 	fill: #1a1818;
 	transition: fill .2s;
 }
-
 .body-dark .svg-link {
 	fill: white;
 }
-
 a:hover .svg-link,
 .svg-link-container:hover .svg-link {
 	fill: #ed4d29;
+}
+.studio-locations-item a:hover .svg-link,
+.studio-locations-item .svg-link-container:hover .svg-link {
+    fill: #a2a4a7;
 }
