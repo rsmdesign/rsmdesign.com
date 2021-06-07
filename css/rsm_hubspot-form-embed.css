@@ -101,3 +101,8 @@
 	color: #ed4d29;
 	font-style: italic;
 }
+
+.studio-locations-item a:hover .svg-link,
+.studio-locations-item .svg-link-container:hover .svg-link {
+    fill: #a2a4a7;
+}
