@@ -32,3 +32,17 @@ p > a {
 p > a:hover {
     color: #ed4d29;
 }
+
+.svg-link {
+	fill: #1a1818;
+	transition: fill .2s;
+}
+
+.body-dark .svg-link {
+	fill: white;
+}
+
+a:hover .svg-link,
+.svg-link-container:hover .svg-link {
+	fill: #ed4d29;
+}
