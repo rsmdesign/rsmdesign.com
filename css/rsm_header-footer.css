@@ -62,6 +62,9 @@ a:hover .svg-link,
 .studio-locations-item .svg-link-container:hover .svg-link {
     fill: #a2a4a7;
 }
+.story-section-outro-wrapper .svg-link {
+    fill: #1a1818;
+}
 
 footer .svg-link-container {
     margin: 0 0 -0.25em;
