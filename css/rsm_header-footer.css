@@ -65,6 +65,9 @@ a:hover .svg-link,
 .story-section-outro-wrapper .svg-link {
     fill: #1a1818;
 }
+.story-section-outro-wrapper .link-hubspot-cta {
+    color: #1a1818;
+}
 
 footer .svg-link-container {
     margin: 0 0 -0.25em;
