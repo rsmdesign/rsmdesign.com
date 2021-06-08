@@ -40,6 +40,9 @@ p > a:hover {
 .body-dark .link-hubspot-cta {
     color: white;
 }
+.story-section-outro-wrapper .link-hubspot-cta {
+    color: #1a1818;
+}
 .link-hubspot-cta:hover {
     color: #ed4d29
 }
@@ -54,6 +57,9 @@ p > a:hover {
 .body-dark .svg-link {
 	fill: white;
 }
+.story-section-outro-wrapper .svg-link {
+    fill: #1a1818;
+}
 a:hover .svg-link,
 .svg-link-container:hover .svg-link {
 	fill: #ed4d29;
@@ -61,12 +67,6 @@ a:hover .svg-link,
 .studio-locations-item a:hover .svg-link,
 .studio-locations-item .svg-link-container:hover .svg-link {
     fill: #a2a4a7;
-}
-.story-section-outro-wrapper .svg-link {
-    fill: #1a1818;
-}
-.story-section-outro-wrapper .link-hubspot-cta {
-    color: #1a1818;
 }
 
 footer .svg-link-container {
