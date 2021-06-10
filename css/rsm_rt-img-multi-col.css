@@ -274,7 +274,8 @@ figure {
 .article-body h2:not(:first-child) {
     margin-top: 1.25em;
 }
-.article-body h2 + h2 {
+.article-body h2 + h2,
+.article-body h2 + h2:not(:first-child) {
     margin-top: -0.5em;
     font-size: 1.222em;
     color: #a2a4a7;
