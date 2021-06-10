@@ -54,7 +54,8 @@
 .rt-body h3 + p:first-of-type,
 .rt-body h3 + p,
 .rt-body h6 + p:first-of-type,
-.rt-body h6 + p {
+.rt-body h6 + p,
+.rt-body h6 + h6 {
     margin-top: 1em;
 }
 .rt-body figure + h2 {
@@ -278,15 +279,15 @@ figure {
 .article-body p:first-of-type {
     margin-top: 0;
 }
-.article-body p:first-child {
-    margin-top: 2em;
+.article-body h2:not(:first-child) {
+    margin-top: 1.25em;
 }
-.article-body figure + h2,
+
 .article-body figure + h3,
 .article-body figure + h4,
 .article-body figure + h5,
 .article-body figure + p {
-    margin-top: 4em;
+    margin-top: 2em;
 }
 .article-body p + figure {
     margin-bottom: 1em;
