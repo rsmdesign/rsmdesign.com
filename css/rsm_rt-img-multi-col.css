@@ -255,14 +255,6 @@ figure {
     }
 }
 
-.article-body h2 + h2 {
-    margin-top: -0.5em;
-    font-size: 1.222em;
-    color: #a2a4a7;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 1em;
-}
 .article-body h2 + p:first-of-type,
 .article-body h2 + p,
 .article-body h2 + figure,
@@ -281,6 +273,14 @@ figure {
 }
 .article-body h2:not(:first-child) {
     margin-top: 1.25em;
+}
+.article-body h2 + h2 {
+    margin-top: -0.5em;
+    font-size: 1.222em;
+    color: #a2a4a7;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
 }
 
 .article-body figure + h3,
