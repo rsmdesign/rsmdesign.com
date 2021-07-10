@@ -56,7 +56,8 @@ const data = {
       "Europe",
       "Southern California",
       "Florida Signage & Wayfinding Design",
-      "Hawaii"
+      "Hawaii",
+      "San Francisco",
    ],
    rsm: ["Women Owned Business"],
    news: [
