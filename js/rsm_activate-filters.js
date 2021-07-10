@@ -54,6 +54,9 @@ const data = {
       "Oregon",
       "Phoenix AZ",
       "Europe",
+      "Southern California",
+      "Florida Signage & Wayfinding Design",
+      "Hawaii",
    ],
    rsm: ["Women Owned Business"],
    topics: [
