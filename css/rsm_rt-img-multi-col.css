@@ -355,6 +355,9 @@ figure {
         min-width: auto;
         margin-left: 0;
     }
+    .article-body figure.w-richtext-align-fullwidth iframe {
+        height: 54vw;
+    }
 }
 @media screen and (max-width: 478px) {
     .article-body blockquote + blockquote {
