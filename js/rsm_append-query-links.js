@@ -43,7 +43,7 @@ const data = {
       "China, East Asia",
       "San Diego, CA",
       "Nashville, Tennessee",
-      "Florida",
+      "Florida Signage & Wayfinding Design",
       "United Arab Emirates (UAE)",
       "Salt Lake City, Utah",
       "Charlotte, NC",
@@ -55,9 +55,9 @@ const data = {
       "Phoenix, AZ",
       "Europe",
       "Southern California",
-      "Florida Signage & Wayfinding Design",
       "Hawaii",
       "San Francisco",
+      "Washington, D.C."
    ],
    rsm: ["Women Owned Business"],
    news: [
