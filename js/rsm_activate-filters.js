@@ -57,7 +57,7 @@ const data = {
       "Southern California Region",
       "Hawaii Region",
       "San Francisco Region",
-      "Washington D.C. Region"
+      "Washington DC Region"
    ],
    rsm: ["Women Owned Business"],
    topics: [
