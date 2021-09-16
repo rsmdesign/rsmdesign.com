@@ -137,9 +137,9 @@ figure {
 .rt-body figure img {
     float: none;
     clear: both;
-    object-fit: contain;
+    object-fit: cover;
     align-self: stretch;
-    -webkit-border-radius: 0.05px;
+    height: 100%;
 }
 .rt-body figure.w-richtext-figure-type-video {
     width: 100%;
@@ -150,7 +150,7 @@ figure {
     position: relative;
     float: none;
     clear: both;
-    object-fit: contain;
+    object-fit: cover;
     align-self: stretch;
 }
 .rt-body figure iframe:first-of-type {
@@ -159,7 +159,7 @@ figure {
     position: relative;
     float: none;
     clear: both;
-    object-fit: contain;
+    object-fit: cover;
     align-self: stretch;
 }
 .rt-body figure iframe:last-of-type {
@@ -168,7 +168,7 @@ figure {
     position: relative;
     float: none;
     clear: both;
-    object-fit: contain;
+    object-fit: cover;
     align-self: stretch;
 }
 .rt-body figure iframe:nth-of-type(2) {
@@ -177,7 +177,7 @@ figure {
     position: relative;
     float: none;
     clear: both;
-    object-fit: contain;
+    object-fit: cover;
     align-self: stretch;
 }
 .rt-body figure.w-richtext-align-normal iframe {
@@ -186,7 +186,7 @@ figure {
     position: relative;
     float: none;
     clear: both;
-    object-fit: contain;
+    object-fit: cover;
     align-self: stretch;
 }
 .rt-body figure.w-richtext-align-center,
