@@ -139,6 +139,7 @@ figure {
     clear: both;
     object-fit: cover;
     align-self: stretch;
+    -webkit-border-radius: 0.05px;
 }
 .rt-body figure.w-richtext-figure-type-video {
     width: 100%;
