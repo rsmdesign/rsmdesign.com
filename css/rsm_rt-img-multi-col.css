@@ -135,11 +135,11 @@ figure {
     margin-right: 0;
 }
 .rt-body figure img {
-    float: none;
+    /*float: none;
     clear: both;
     object-fit: cover;
     align-self: stretch;
-    height: 100%;
+    height: 100%;*/
 }
 .rt-body figure.w-richtext-figure-type-video {
     width: 100%;
