@@ -11,7 +11,7 @@ const data = {
       "Civic Design",
       "Education Design",
       "Residential Community Signage",
-      "Transit Design",
+      "Transit Signage Design",
       "Healthcare Signage Design",
       "International Design",
       "Waterfront Wayfinding Design",
