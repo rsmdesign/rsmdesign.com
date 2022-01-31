@@ -365,3 +365,8 @@ figure {
         font-size: 1.5em;
     }
 }
+
+.w-iframe {
+    width: 100%;
+    margin-bottom: 1em;
+}
