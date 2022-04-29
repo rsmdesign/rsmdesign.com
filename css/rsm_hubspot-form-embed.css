@@ -33,11 +33,18 @@
 	}
 }
 
-.hs-form-embed-contact,
 .hs-form-embed-contact form {
 	display: grid;
 	grid-template-columns: [col1-start] calc(100% / 3) [col1-end col2-start] calc(200% / 3) [col2-end];
 	column-gap: 1em;
+}
+
+.hs-form-embed-contact form > div {
+	grid-column: col1;
+}
+
+.hs-form-embed-contact form > div.hs-message {
+	grid-column: col2;
 }
 
 .hs-form-embed-contact input,
@@ -45,15 +52,6 @@
 .hs-form-embed-contact textarea,
 .hs-form-embed-80 input {
 	width: 100%;
-}
-
-.hs-form-embed-contact input,
-.hs-form-embed-contact select {
-	grid-column: col1;
-}
-
-.hs-form-embed-contact textarea {
-	grid-column: col2;
 }
 
 .hs-form-embed input:focus,
