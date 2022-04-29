@@ -43,8 +43,11 @@
 	grid-column: col1;
 }
 
-.hs-form-embed-contact form > div.hs-message {
+.hs-form-embed-contact form > div.hs-message,
+.hs-form-embed-contact form > div.hs-project-budget,
+.hs-form-embed-contact form > div.hs-message, {
 	grid-column: col2;
+	grid-row: 1;
 }
 
 .hs-form-embed-contact input,
