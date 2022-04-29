@@ -3,10 +3,6 @@
 	width: 100%;
 }
 
-.hs-form-embed-80 form {
-	width: 80%;
-}
-
 .hs-form-embed label {
 	font-weight: 400;
 }
@@ -14,7 +10,6 @@
 .hs-form-embed input,
 .hs-form-embed select,
 .hs-form-embed textarea {
-	width: 50%;
 	max-width: 100%;
 	margin-bottom: 2em;
 	padding: 0 0 0.25em;
@@ -25,16 +20,40 @@
 	border-radius: 0;
 }
 
+.hs-form-embed-full input,
+.hs-form-embed-full select,
+.hs-form-embed-full textarea {
+	width: 50%;
+}
+
+@media screen and (max-width: 478px) {
+	.hs-form-embed-full input,
+	.hs-form-embed-full select {
+		width: 100%;
+	}
+}
+
+.hs-form-embed-contact,
+.hs-form-embed-contact form {
+	display: grid;
+	grid-template-columns: [col1-start] calc(100% / 3) [col1-end col2-start] calc(200% / 3) [col2-end];
+	column-gap: 1em;
+}
+
+.hs-form-embed-contact input,
+.hs-form-embed-contact select,
+.hs-form-embed-contact textarea,
 .hs-form-embed-80 input {
 	width: 100%;
 }
 
-@media screen and (max-width: 478px) {
-	.hs-form-embed input,
-	.hs-form-embed select,
-	.hs-form-embed-80 input {
-		width: 100%;
-	}
+.hs-form-embed-contact input,
+.hs-form-embed-contact select {
+	grid-column: col1;
+}
+
+.hs-form-embed-contact textarea {
+	grid-column: col2;
 }
 
 .hs-form-embed input:focus,
