@@ -43,11 +43,24 @@
 	grid-column: col1;
 }
 
-.hs-form-embed-contact form > div.hs-message,
-.hs-form-embed-contact form > div.hs-project-budget,
+.hs-form-embed-contact form > div.hs-dependent-field:nth-of-type(2),
+.hs-form-embed-contact form > div.hs-dependent-field:last-of-type,
+.hs-form-embed-contact form > div.hs_project_budget,
 .hs-form-embed-contact form > div.hs-message {
 	grid-column: col2;
+}
+
+.hs-form-embed-contact form > div.hs-dependent-field:nth-of-type(2) {
 	grid-row: 1;
+}
+.hs-form-embed-contact form > div.hs-dependent-field:last-of-type {
+	grid-row: 2;
+}
+.hs-form-embed-contact form > div.hs_project_budget {
+	grid-row: 3;
+}
+.hs-form-embed-contact form > div.hs-message {
+	grid-row: 4;
 }
 
 .hs-form-embed-contact input,
