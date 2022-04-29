@@ -63,13 +63,24 @@
 	grid-row: 6 / 8;
 }
 
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 991px) {
 	.hs-form-embed-contact form {
 		display: flex;
 		flex-direction: column;
 	}
 	.hs-form-embed-contact form > div {
 		padding-right: 0;
+	}
+	.hs-form-embed-full input,
+	.hs-form-embed-full select {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 478px) {
+	.hs-form-embed-full input,
+	.hs-form-embed-full select {
+		width: 100%;
 	}
 }
 
