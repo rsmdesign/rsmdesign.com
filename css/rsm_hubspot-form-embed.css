@@ -63,6 +63,16 @@
 	grid-row: 6 / 8;
 }
 
+@media screen and (max-width: 478px) {
+	.hs-form-embed-contact form {
+		display: flex;
+		flex-direction: column;
+	}
+	.hs-form-embed-contact form > div {
+		padding-right: 0;
+	}
+}
+
 .hs-form-embed-contact input,
 .hs-form-embed-contact select,
 .hs-form-embed-contact textarea,
