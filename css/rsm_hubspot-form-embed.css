@@ -36,31 +36,31 @@
 .hs-form-embed-contact form {
 	display: grid;
 	grid-template-columns: [col1-start] calc(100% / 3) [col1-end col2-start] calc(200% / 3) [col2-end];
-	column-gap: 1em;
 }
 
 .hs-form-embed-contact form > div {
 	grid-column: col1;
+	padding-right: 1em;
 }
 
-.hs-form-embed-contact form > div.hs-dependent-field:nth-of-type(2),
-.hs-form-embed-contact form > div.hs-dependent-field:last-of-type,
+.hs-form-embed-contact form .hs-dependent-field ~ .hs-dependent-field,
 .hs-form-embed-contact form > div.hs_project_budget,
 .hs-form-embed-contact form > div.hs-message {
 	grid-column: col2;
+	padding-right: 0;
 }
 
-.hs-form-embed-contact form > div.hs-dependent-field:nth-of-type(2) {
+.hs-form-embed-contact form > .hs-dependent-field ~ .hs-dependent-field {
 	grid-row: 1; 
 }
-.hs-form-embed-contact form > div.hs-dependent-field:last-of-type {
+.hs-form-embed-contact form > .hs-dependent-field ~ .hs-dependent-field ~ .hs-dependent-field {
 	grid-row: 2;
 }
 .hs-form-embed-contact form > div.hs_project_budget {
 	grid-row: 3;
 }
 .hs-form-embed-contact form > div.hs-message {
-	grid-row: 4;
+	grid-row: 4 / span 2;
 }
 
 .hs-form-embed-contact input,
